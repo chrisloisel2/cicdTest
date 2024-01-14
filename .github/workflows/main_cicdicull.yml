@@ -24,7 +24,7 @@ jobs:
                   npm run build --if-present
 
             - name: Zip dist folder for deployment
-              run: zip -r dist.zip ./dist/cicdtest/browser
+              run: zip -r dist.zip ./dist/cicd-test/browser/*
 
             - name: Upload dist artifact for deployment job
               uses: actions/upload-artifact@v3
